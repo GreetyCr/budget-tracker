@@ -1,0 +1,1 @@
+export const MAX_RANGE_DATES = 90;
