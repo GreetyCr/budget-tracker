@@ -87,12 +87,7 @@ A full-stack budget tracking application designed to help users manage their fin
 
 ## Usage
 
-- **Demo**: [Live Demo](https://your-app-url.com)
-- **Screenshots**:
-  - **Dashboard**: ![Dashboard Screenshot](https://link-to-dashboard-screenshot.com)
-  - **Transaction Management**: ![Transactions Screenshot](https://link-to-transactions-screenshot.com)
-  - **Category Statistics**: ![Category Stats Screenshot](https://link-to-category-stats-screenshot.com)
-  - **Historical Data**: ![Historical Data Screenshot](https://link-to-historical-data-screenshot.com)
+- **Demo**: [Live Demo]([https://your-app-url.com](https://budget-tracker-bice-two.vercel.app/))
 
 ## Technologies Used
 
