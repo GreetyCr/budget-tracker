@@ -1,37 +1,138 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Budget Tracker
 
-First, run the development server:
+A full-stack budget tracking application designed to help users manage their finances efficiently. This application offers robust features such as transaction management, category statistics, historical data aggregates, and stunning data visualizations.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
+- [Features](#features)
+- [Installation and Setup](#installation-and-setup)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [License](#license)
+- [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Transaction Management**: 
+  - Add, edit, and delete transactions to keep track of income and expenses.
+  - View and manage transactions through an intuitive interface.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Category Statistics**:
+  - Analyze spending habits with detailed breakdowns by category.
+  - Visualize spending patterns with pie charts and bar graphs.
 
-## Learn More
+- **Historical Data Aggregates**:
+  - Track financial trends over time.
+  - View aggregated data by month, quarter, or year to identify spending and saving patterns.
 
-To learn more about Next.js, take a look at the following resources:
+- **Stunning Charts**:
+  - Leverage interactive charts powered by Recharts to visualize financial data.
+  - Includes trend lines, category breakdowns, and more for comprehensive insights.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Icon Selector for Categories**:
+  - Customize categories with an icon selector to easily identify different types of expenses and income.
+  - Personalize the user experience with a wide selection of icons.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Authentication**:
+  - Secure login and user management powered by Clerk.
+  - Ensure user data privacy and security with robust authentication mechanisms.
 
-## Deploy on Vercel
+## Installation and Setup
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
+- Node.js (v14 or later)
+- npm (v6 or later) or Yarn
+- PostgreSQL or SQLite
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# budget-tracker
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/YourUsername/budget-tracker.git
+   ```
+
+2. **Navigate to the project directory**:
+   ```bash
+   cd budget-tracker
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+   or
+   ```bash
+   yarn install
+   ```
+
+4. **Set up the environment variables**:
+   - Create a `.env` file in the root directory and add the necessary environment variables.
+   - Example `.env` file:
+     ```env
+     DATABASE_URL=your_database_url
+     CLERK_SECRET_KEY=your_clerk_secret_key
+     ```
+
+5. **Run database migrations**:
+   ```bash
+   npx prisma migrate dev
+   ```
+
+6. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+   The application will be running on `http://localhost:3000`.
+
+## Usage
+
+- **Demo**: [Live Demo](https://your-app-url.com)
+- **Screenshots**:
+  - **Dashboard**: ![Dashboard Screenshot](https://link-to-dashboard-screenshot.com)
+  - **Transaction Management**: ![Transactions Screenshot](https://link-to-transactions-screenshot.com)
+  - **Category Statistics**: ![Category Stats Screenshot](https://link-to-category-stats-screenshot.com)
+  - **Historical Data**: ![Historical Data Screenshot](https://link-to-historical-data-screenshot.com)
+
+## Technologies Used
+
+- **Frontend**:
+  - **Next.js**: Server-side rendering and API routes.
+  - **React**: Component-based UI development.
+  - **Tailwind CSS**: Utility-first CSS framework for styling.
+  - **Shadcn UI**: Custom UI components built on top of Tailwind CSS.
+  - **Recharts**: Library for creating charts and visualizations.
+
+- **Backend**:
+  - **Next.js API Routes**: Serverless functions for handling backend logic.
+  - **Prisma**: ORM for database interaction with SQLite and PostgreSQL.
+
+- **Authentication**:
+  - **Clerk**: Authentication service for user management and secure login.
+
+- **Database**:
+  - **SQLite**: Lightweight relational database for development.
+  - **Vercel PostgreSQL**: Scalable database for production deployment.
+
+- **State Management**:
+  - **React-query**: Data fetching and state management for server-side data.
+
+- **Deployment**:
+  - **Vercel**: Hosting platform for seamless deployment and scalability.
+
+## Project Structure
+
+- `/components`: Reusable UI components.
+- `/pages`: Next.js pages, including API routes.
+- `/public`: Static assets like images and icons.
+- `/styles`: Global styles and Tailwind configuration.
+- `/utils`: Utility functions and helpers.
+- `/prisma`: Database schema and migration files.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+Created by Randall Bonilla - [LinkedIn]([https://www.linkedin.com/in/randall-bonilla/](https://www.linkedin.com/in/randall-bonilla-cordero-8653a6220/) - [Email](mailto:greetysoftwarejs@gmail.com)
